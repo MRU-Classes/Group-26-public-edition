@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-    <header>
+    <header role="banner">
         <img src="images/logo.png" alt="FouadTech logo" />
-        <nav>
+        <nav role="navigation" aria-label="Main menu">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -19,22 +19,19 @@
         </nav>
     </header>
 
-    <main>
-        <article>
-            <h1>Welcome to FouadTech</h1>
-            <p><strong>FouadTech</strong> is where innovation meets real-world application.</p>
+   <main role="main">
+    <section class="hero" aria-labelledby="hero-heading">
+        <h1 id="hero-heading">Welcome to FouadTech</h1>
+        <p>Innovation meets simplicity. Explore our responsive and accessible tools.</p>
+        <img src="images/people.jpg" alt="Team working together">
+    </section>
 
-            <figure>
-                <img src="images/people.jpg" alt="Team brainstorming session">
-                <figcaption>Our team designing the next big thing</figcaption>
-            </figure>
-            
-            <section class="feature-grid">
-                <div class="card">Box 1: Product / Service Info</div>
-                <div class="card">Box 2: Product / Service Info</div>
-                <div class="card">Box 3: Product / Service Info</div>
-                <div class="card">Box 4: Product / Service Info</div>
-            </section>
+    <section class="feature-grid" aria-label="Product Features">
+        <div class="card">Box 1: Product / Service Info</div>
+        <div class="card">Box 2: Product / Service Info</div>
+        <div class="card">Box 3: Product / Service Info</div>
+        <div class="card">Box 4: Product / Service Info</div>
+    </section>
 
             <p>Jump to our <a href="#features">highlights</a> or visit <a href="https://techcrunch.com" target="_blank">TechCrunch</a> for the latest tech trends.</p>
 
@@ -63,7 +60,7 @@
         </article>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <p>&copy; 2025 FouadTech. All rights reserved.</p>
     </footer>
 </body>
